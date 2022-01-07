@@ -16,7 +16,7 @@
    }
 body{
     box-sizing: border-box;
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     margin:auto;
     font-size: 12px;
@@ -134,7 +134,7 @@ nav label {
     border: 0px;
     background-color: white;
     font-weight: bold;
-    font-size: larger;
+    /* font-size: larger; */
     justify-content: center;
     margin: 10px;
 }
@@ -148,17 +148,17 @@ h3{
     margin: 20px;;
 }
 .section1 h3{
-    margin-left: 120px;
+    margin-left: 20px;
 }
 h5{
     margin-top: 35px;
-margin-left: 115px;
+margin-left: 20px;
 font-size: medium;
 }
 .menu{
     border:1px solid rgb(182, 179, 179);
     border-left: 0px;
-    /* max-width: max-content; */
+    max-width: max-content;
     /* line-height: ;  */
     border-radius: 20px;
     /* padding: 1px; */
@@ -204,7 +204,7 @@ font-size: medium;
 }
  img{
     height: 100px;
-    width: 200px;;
+    width: 180px;;
     justify-content: space-around;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -257,7 +257,7 @@ a{
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0%;
     object-fit: cover;
-    height: 150px;
+    height: 120px;
     width: 40%; 
 }
 
@@ -359,13 +359,14 @@ footer > div {
   .image3 {
     height:160px;
 }
-
+@media screen and (max-width: 992px){
+/* }
 @media (max-device-width: 992px) 
- {
+ { */
     body{
-        width: 100%;
+        width: 80%;
         margin: auto;
-        font-size:large;
+        font-size:medium;
     }
     .section1 h3{
         margin-left: 30px;
@@ -375,7 +376,12 @@ footer > div {
     margin-left: 30px;
     font-size: medium;
     }
-    
+
+
+    .filtericon{
+    margin-left: -1px;
+    padding: 13px;
+}
     
     /* #hebergement{
         margin: 10px auto;
@@ -388,20 +394,35 @@ footer > div {
         justify-content: center;
     }
     img{
-        height: 120px;
-        width:220px;
+        height: 100px;
+        width:230px;
+    }
+    .section1    {
+        background-color: white;
     }
     .section2 > div > a > img {
         height:160px;
         width:40%;
 
     }
+    h5{
+        margin:10px;
+    }
     .figcaption{
         padding: 2px;
         margin:5px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    .shade{
+        margin:2px;
     }
     img, .image1, .image2, .image3 {
-        height: 158px;
+        height: 167px;
+        
+    }
+    .menu button{
+        font-size: 12px;
     }
     
     
@@ -409,9 +430,11 @@ footer > div {
 
 }
 
-  
-@media  (max-device-width: 768px) {
+/* @media (min-width: 350px) and (max-width: 768px) { */
 
+/* } 
+@media  (max-device-width: 768px) { */
+    @media screen and (max-width: 768px){
     main{
         width: 90%;
         justify-content: center;
@@ -434,8 +457,15 @@ header nav {
     width:100%;
     text-align: center;
 }
+.filters{
+    display: flex;
+    flex-direction: column;
+}
 .figcaption{
     margin-left: 20px;
+}
+nav label {
+    margin: 14px;
 }
 /* header nav {
     width:100%;
@@ -465,9 +495,10 @@ form input {
     border-bottom:3px solid var(--primary-color);
 } */
 form > button {
-    width: 45px;
+    width: 54px;
     height: 51px;
-    border-radius: 12px;   
+    border-radius: 12px;
+    padding: 10px;
 }
 form > button > span {
     display: none;
@@ -535,8 +566,35 @@ form > button > span {
 
 }
 
-@media  (max-device-width: 768px) {
+@media screen and (max-width: 410px){
+    /* body{
+        font-size: 7px;
+    } */
     .section2 > div > a > img{
-        height:auto;
+        height: 120px;;
     }
+    form input {
+        font-size: 60%;
+        font-weight: bold;
+    }
+    .filtericon {
+        margin-left: -4px;
+        padding: 16px;
+    }
+    form > button {
+        width: 42px;
+        height: 43px;
+        border-radius: 12px;
+        padding: 0px;
+    }
+    .fa-map-marker-alt{
+        padding: 13.5px;
+    }
+    .filters a button{
+        white-space: wrap;
+        font-size: 8px;
+
+    }
+
+    
 }
