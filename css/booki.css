@@ -412,7 +412,7 @@ footer > div {
         padding: 2px;
         margin:5px;
         font-size: 10px;
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
     .shade{
         margin:2px;
